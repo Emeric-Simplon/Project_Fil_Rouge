@@ -55,14 +55,14 @@ $transition--length: .8;
 		position: fixed;
 		width: $width;
 		height: $height;
-		background-color: rgba(#eaeaea, .2);
+		background-color: rgba(#eaeaea, 0);
 		z-index: -1;
 		transition: transform $transition--length + s ,background-color 0.7s;
 		transform: translateX(0%) translateY(-100%);
 	}
 
 	&:after {
-		background: rgba(#ffffff, 1);
+		background: rgba(#ffffff, 0);
 		transition-delay: 0s;
 
 	}
@@ -81,6 +81,9 @@ $transition--length: .8;
 		font-size: $font--size--calc;
 		font-weight: 200;
 		cursor: pointer;
+		ul{
+			padding: 0;
+		}
 		img {
 			position: absolute;
 			opacity: 0;
@@ -96,12 +99,11 @@ $transition--length: .8;
 	&__list-item {
 		position: relative;
 		display: inline-block;
-		padding: 1%;
+		margin: 1%;
 		transition-delay: $transition--length + s;
 		opacity: 0;
 		transform: translate(0%, 100%);
 		transition: opacity .2s ease, transform .3s ease;
-		margin: auto;
 
 		a {
 			color: $font--color;
@@ -179,7 +181,6 @@ $transition--length: .8;
 			opacity: 1;
 			transform: translateX(0%);
 			transition: opacity .3s ease, transform .3s ease, color .3s ease;
-
 			@for $i from 0 through $menu--items--count {
 				&:nth-child(#{$i}) {
 					transition-delay: $transition--length * $i / 8 + .5 + s;
