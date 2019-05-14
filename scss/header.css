@@ -1,0 +1,15 @@
+header {
+  position: relative;
+  width: auto;
+}
+
+header .BackGreen {
+  width: 100%;
+  position: absolute;
+}
+
+header .Nom {
+  position: absolute;
+  font-size: 3vw;
+}
+/*# sourceMappingURL=header.css.map */

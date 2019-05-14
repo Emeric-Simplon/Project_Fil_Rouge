@@ -7,35 +7,85 @@
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
     integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
-  <link rel="stylesheet" type="text/css" href="css/style8.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
   <title>Document</title>
 </head>
 
 <body>
-  <div>
-  <div class="menu-icon">
-    <span class="menu-icon__line menu-icon__line-left"></span>
-    <span class="menu-icon__line"></span>
-    <span class="menu-icon__line menu-icon__line-right"></span>
-  </div>
-  <div class="nav">
-    <div class="nav__content">
-      <ul class="nav__list">
-        <li class="nav__list-item"><a href="#skills">Services</a></li>
-        <li class="nav__list-item"><a href="#portfolio">PortFolio</a></li>
-        <li class="nav__list-item"><a href="#team">Team</a></li>
-        <li class="nav__list-item"><a href="#faq">Contact</a></li>
+
+  <button id="trigger-overlay" type="button">Menu</button>
+  <div class="overlay overlay-contentscale">
+    <video autoplay muted loop id="myVideo">
+      <source src="medias/videos/Flower Life.mp4" type="video/mp4">
+    </video>
+    <button type="button" class="overlay-close">Close</button>
+    <nav>
+      <ul>
+        <li class="menu-link"><a href="#skills">Skills</a></li>
+        <li class="menu-link"><a href="#portfolio">PortFolio</a></li>
+        <li class="menu-link"><a href="#team">Team</a></li>
+        <li class="menu-link"><a href="#faq">FAQ/Contact</a></li>
       </ul>
-      <img src="media/images/gwa_Black.png" alt="">
-    </div>
+    </nav>
   </div>
-</div>
+  <!--Background et logo-->
   <header>
+    <img class="BackGreen" src="media/images/images5green.jpg" alt="">
+    <img class="logo" src="media/images/logo1.png" alt="">
+    <div class="Agence">Green Web Agency</div>
   </header>
+  <!--Présentation de la spécialité de l'Agence-->
+  <section id="intro">
+    <h1 class="titre">Green Web Agency</h1>
+    <p classe="présentation">Notre Agence est née de la réunion de personnalités partageant des valeurs écologiques et
+      prônant un mode de vie le plus connecté possible à la nature. A ce titre, nous souhaitons mettre nos compétences
+      digitales au service d’entités proposant des mécénats, mais aussi à but non lucratif et de protection de
+      l’environnement.<br>
+      Nous sommes également sensibles au lien entre l’alimentation et la santé.<br> Nous proposons donc nos services à
+      tous les professionnels de la santé holistique (ostéopathes, praticiens de santé naturopathe et autres) mais
+      également aux producteurs locaux utilisant des méthodes d’agriculture respectueuses de l’environnement (label AB,
+      permaculture, la biodynamie)<br>
+      Notre leitmotiv : la réalisation de site esthétique, ergonomique mais surtout green!
+    </p>
+  </section>
+  <!--Section services-->
   <section>
     <article id="skills">
+      <!--le titre-->
+      <div class="litle-title-style">
+        <h2>Nous créons votre image</h2>
+        <div class="underline"></div>
+      </div>
+
+
+      <!--les paragraphes sur les services proposés-->
+      <div class="container-services">
+        <div class="service">
+          <i class="fas fa-laptop-code"></i>
+          <h3>Un site responsive</h3>
+          <p>Votre site s'adaptera à la taille de l'écran du téléphone mobile ou de la tablette de votre client.</p>
+        </div>
+        <div class="service">
+          <i class="fas fa-paint-brush"></i>
+          <h3>Un design moderne</h3>
+          <p>La première impression de votre site est importante. Cela concerne l'esthétique mais aussi l'ergonomie.
+            Nous ferons donc en sorte que vos utilisateurs apprécient leur navigation et trouvent facilement ce qu'ils
+            recherchent.
+          </p>
+        </div>
+        <div class="service">
+          <i class="fas fa-search"></i>
+          <h3>Référencement Google</h3>
+          <p>Pour être en première page de Google, vous pouvez nous faire confiance. Cela, en toute transparence,
+            puisque vous pourrez suivre le trafic de votre site.
+          </p>
+        </div>
+      </div>
+
+
     </article>
     <article id="portfolio">
+
     </article>
     <article id="team">
       <div class="litle-title-style">
@@ -44,14 +94,14 @@
       </div>
       <div class="container-team">
         <div class="member-card">
-          <img src="media/images/françoise.jpg" alt="" />
+          <img src="medias/images/sample.jpg" alt="" />
           <div class="identity">
             <h3>Françoise</h3>
             <span>Commerciale</span>
           </div>
         </div>
         <div class="member-card">
-          <img src="media/images/maxime.jpg" alt="" />
+          <img src="medias/images/sample.jpg" alt="" />
           <div class="identity">
             <h3>Maxime</h3>
             <span>Graphiste</span>
@@ -59,15 +109,15 @@
           </div>
         </div>
         <div class="member-card">
-          <img src="media/images/maxime.jpg" alt="" />
+          <img src="medias/images/sample.jpg" alt="" />
           <div class="identity">
             <h3>Dévrice</h3>
-            <span>Développeur</span>
+            <span> Développeur</span>
 
           </div>
         </div>
         <div class="member-card">
-          <img src="media/images/emeric.jpg" alt="" />
+          <img src="medias/images/sample.jpg" alt="" />
           <div class="identity">
             <h3>Emeric</h3>
             <span>Développeur</span>
@@ -83,62 +133,51 @@
         </div>
         <div class="question-card">
           <h4 class="question">
-            Lorem ipsum dolor, sit amet consectetur pellat voluptates aper?
+            Quels sont les avantages d'un site internet fait sur mesure?
           </h4>
           <p class="answer">
-            Lorem ipsum dolor sit ameique consequatur magnam beatae aliquam
-            nostrum dolorem libero neque cum iste, eligendi et. Quae unde
-            libero dicta inventore architecto quod?
+            En choisissant de travailler avec nous, vous décidez de vous démarquer de vos concurrents grâce à un site
+            internet réalisé de A à Z avec vous. <br>En d’autres termes, votre site correspond parfaitement à vos
+            besoins et plus encore. <br>
+            Les possibilités de design et les fonctionnalités souhaitées sont illimitées.
           </p>
         </div>
         <div class="question-card">
           <h4 class="question">
-            Lorem ipsum dolor, sit amet consectetur pellat voluptates aper?
-          </h4>
+            Quel est le délai de réalisation de mon site internet? </h4>
           <p class="answer">
-            Lorem ipsum dolor sit ameique consequatur magnam beatae aliquam
-            nostrum dolorem libero neque cum iste, eligendi et. Quae unde
-            libero dicta inventore architecto quod?
+            Nos sites internet sont réalisés sous 15 jours.
           </p>
         </div>
         <div class="question-card">
           <h4 class="question">
-            Lorem ipsum dolor, sit amet consectetur pellat voluptates aper?
+            Quels sont les frais à prévoir après la création du site web?
           </h4>
           <p class="answer">
-            Lorem ipsum dolor sit ameique consequatur magnam beatae aliquam
-            nostrum dolorem libero neque cum iste, eligendi et. Quae unde
-            libero dicta inventore architecto quod?
+            Les seuls frais à prévoir après la création de votre site web sont les frais d’hébergement et de nom de
+            domaine.
           </p>
         </div>
         <div class="question-card">
           <h4 class="question">
-            Lorem ipsum dolor, sit amet consectetur pellat voluptates aper?
+            Pourrais-je recevoir mes mails professionnels sur ma boîte mail habituelle ?
           </h4>
           <p class="answer">
-            Lorem ipsum dolor sit ameique consequatur magnam beatae aliquam
-            nostrum dolorem libero neque cum iste, eligendi et. Quae unde
-            libero dicta inventore architecto quod?
+            À la fin de la création de votre site internet, nous vous créons votre boîte mail professionnelle pour
+            recevoir les demandes de vos clients et y répondre.<br>
+            Si vous souhaitez recevoir directement vos mails sur votre boîte mail personnelle, cela est tout à fait
+            possible.<br>
+            Il suffit de nous le demander.<br>
+            Vous avez la possibilité d’avoir jusqu’à 5 boîtes mails professionnelles.
           </p>
-        </div>
-      </div>
-      <div id="container-form">
-        <div class="litle-title-style">
-          <h2>CONTACT</h2>
-          <div class="underline"></div>
-        </div>
-        <form action="">
-        </form>
-      </div>
-    </article>
-  </section>
-  <section id="find-us">
-    google map
-  </section>
-  <footer>
 
-  </footer>
-  <script src="js/main.js"></script>
+          <section id="find-us">
+            google map
+          </section>
+          <footer>
+
+          </footer>
+          <script src="js/main.js"></script>
 </body>
 
 </html>

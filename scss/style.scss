@@ -1,7 +1,8 @@
-$h4_color : rgb(21,106,59);	
+$h4_color : rgb(21,106,59);
+@import "header";
 @import "menu";
 @import "team";
 @import "faq";
-body{
-    margin: auto;
-}
+body {
+    margin: 0 auto;
+        }
