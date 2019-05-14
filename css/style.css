@@ -1,3 +1,102 @@
+@charset "UTF-8";
+header {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  /*.Backgreen:hover {
+      filter: opacity(80%); 
+  }*/ }
+  header .BackGreen {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    filter: opacity(70%); }
+  header .Agence {
+    color: #FEFEE2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 6vw; }
+  header .logo {
+    position: absolute;
+    height: 80%;
+    padding: 5%; }
+
+#intro {
+  background-color: #FEFEE2;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+  #intro h1 {
+    margin: auto;
+    padding-top: 2%;
+    width: 70%;
+    font-size: 6vw;
+    transform: scale(1);
+    transition: transform 1s;
+    text-align: center;
+    overflow: hidden; }
+  #intro h1:hover {
+    transform: scale(1.1);
+    transition-duration: 1s; }
+  #intro p, #intro .pr├®sentation {
+    margin: 2%;
+    overflow: hidden;
+    padding: 2% 0;
+    margin: auto;
+    width: 70%;
+    font-size: 1.5vw;
+    text-align: center;
+    transform: scale(1);
+    transition: transform 1s; }
+  #intro p:hover {
+    transform: scale(1.1);
+    transition-duration: 1s; }
+
+#skills {
+  margin: 0;
+  width: 100%;
+  height: auto; }
+  #skills .litle-title-style {
+    text-align: center;
+    font-size: 3vw;
+    padding: 4%; }
+  #skills .container-services {
+    display: flex;
+    justify-content: space-around;
+    width: 100%; }
+    #skills .container-services .service {
+      text-align: center;
+      width: 25%;
+      font-size: 1.5vw; }
+      #skills .container-services .service i {
+        font-size: 7vw;
+        color: #C8FF33;
+      /*background-color: #FEFEE2;
+      position: relative;
+    
+      color: green;
+      padding: 10%;
+      border: 1px solid grey;
+      border-radius: 50%;*/
+        /*&:after{
+               position: absolute;
+               content: " ";
+               top: 45%;
+               left:87%;
+               background-color:green;
+               width: 1px;
+               height: 1px;
+               border-radius: 50%;
+               border: 8px solid green;
+           }*/ }
+      #skills .container-services .service p {
+        margin: auto; }
+
 .site-content {
   max-width: 1100px;
   height: 100%;
@@ -193,6 +292,6 @@ h2 {
     animation-direction: alternate; }
 
 body {
-  margin: auto; }
+  margin: 0 auto; }
 
 /*# sourceMappingURL=style.css.map */
